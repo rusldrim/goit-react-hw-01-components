@@ -1,0 +1,33 @@
+.statistics {
+    width: 280px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 25px;
+
+    background-color: #f1e68f;
+}
+
+.statistics__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.statistics__statList {
+    display: flex;
+}
+
+.statistics__item {
+    width: 60px;
+    padding: 10px;
+    color: black;
+}
+
+.statistics__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 1.33;
+}
