@@ -7,7 +7,7 @@ export default function Statistics({ title, stats }) {
       {title && <h2 className={css.statistics__title}>{title}</h2>}
       <ul className={css.statistics__statList}>
         {stats.map(stat => {
-          const { label = stat.label, percentage = stat.percentage } = stat;
+          const { label, percentage } = stat;
           return (
             <li
               key={stat.id}
@@ -34,6 +34,6 @@ Statistics.propTypes = {
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    })
-  ),
+    }).isRequired,
+  ).isRequired,
 };
