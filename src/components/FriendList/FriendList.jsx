@@ -5,13 +5,11 @@ export default function FriendList({ stats }) {
   return (
     <ul className={css.friendList}>
       {stats.map(stat => {
-        const { id, avatar, name, isOnline } = stat;
-        const styleStatus = {
-          backgroundColor: isOnline ? 'green' : 'red',
-        };
+        const { id, avatar, name } = stat;
+        
         return (
           <li key={id} className={css.friendList__item}>
-            <span className={css.friendList_status} style={styleStatus}></span>
+            <span className={css.friendList_status}></span>
             <img
               className={css.friendList_avatar}
               src={avatar}
@@ -32,6 +30,6 @@ FriendList.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
-    })
-  ),
+    }).isRequired,
+  ).isRequired,
 };
