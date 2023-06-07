@@ -1,0 +1,27 @@
+.stats {
+  display: flex;
+}
+
+.statsItem {
+  width: 66.66px;
+  color: white;
+  background-color: black;
+}
+
+.statsItem:not(:last-child) {
+  border-right: solid 1px black;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 1.33;
+  color: white;
+  display: block;
+}
+
+.quantity {
+  font-size: 22px;
+  line-height: 1.33;
+  color: white;
+  display: block;
+}
