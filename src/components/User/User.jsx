@@ -9,6 +9,7 @@ export default function User({
   followers,
   views,
   likes,
+  stats
 }) {
   return (
     <div className={css.profile}>
@@ -22,15 +23,15 @@ export default function User({
       <ul className={css.profile__stats}>
         <li className={css.profile__statsItem}>
           <span className={css.profile__label}>Followers</span>
-          <span className={css.profile__quantity}>{followers}</span>
+          <span className={css.profile__quantity}>{stats.followers}</span>
         </li>
         <li className={css.profile__statsItem}>
           <span className={css.profile__label}>Views</span>
-          <span className={css.profile__quantity}>{views}</span>
+          <span className={css.profile__quantity}>{stats.views}</span>
         </li>
         <li className={css.profile__statsItem}>
           <span className={css.profile__label}>Likes</span>
-          <span className={css.profile__quantity}>{likes}</span>
+          <span className={css.profile__quantity}>{stats.likes}</span>
         </li>
       </ul>
     </div>
