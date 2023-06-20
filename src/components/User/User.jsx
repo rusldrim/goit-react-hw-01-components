@@ -6,9 +6,6 @@ export default function User({
   username,
   tag,
   location,
-  followers,
-  views,
-  likes,
   stats
 }) {
   return (
